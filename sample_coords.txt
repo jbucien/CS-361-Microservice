@@ -1,0 +1,5 @@
+[{"name": "San Francisco, California", "lat": 37.773972, "lon": -122.431297},{"name": "Presidio", "lat": 37.79086, "lon": -122.45942}, {"name": "Mount Sutro Historic Trail", "lat": 37.75756, "lon": -122.45615}, {"name": "Water Dog Lake Park", "lat": 37.50344, "lon": -122.29875}]
+
+[{"name": "Fairfax, Virginia", "lat": 38.84622, "lon": -77.30637},{"name": "Difficult Run", "lat": 38.87420, "lon": -77.31520}, {"name": "Section 7", "lat": 38.87594, "lon": -77.31144}, {"name": "495 Downhill", "lat": 38.84040, "lon": -77.22152}]
+
+

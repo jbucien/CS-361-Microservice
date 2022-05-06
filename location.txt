@@ -1,1 +1,0 @@
-[{"name": "New York City, New York", "lat": 40.7128, "lon": -74.0060},{"name": "Central Park", "lat": 40.7812, "lon": -73.9665}, {"name": "REALLLkjkjjjjjjjjjjjjjjjjjjjjj", "lat": 40.6602, "lon": -73.9690}, {"name": "Brooklyn Botanic Garden", "lat": 40.6695, "lon": -73.9624}]
