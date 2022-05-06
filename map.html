@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8b3591b84028e1ccc6a8591475d5ae74 {
+                    position: relative;
+                    width: 600.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8b3591b84028e1ccc6a8591475d5ae74" ></div>
+        
+</body>
+<script>    
+    
+            var map_8b3591b84028e1ccc6a8591475d5ae74 = L.map(
+                "map_8b3591b84028e1ccc6a8591475d5ae74",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5097df5bd15fe3e72af571cf64f85e1f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8b3591b84028e1ccc6a8591475d5ae74);
+        
+    
+            var marker_2bea974cb317a8965077a40e68f4cad1 = L.marker(
+                [40.7812, -73.9665],
+                {}
+            ).addTo(map_8b3591b84028e1ccc6a8591475d5ae74);
+        
+    
+            var div_icon_7dc1d120d5b9ed5c205f65e309cde49a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; color: black; font-weight: bold\"\u003eCentral Park\u003c/div\u003e"});
+            marker_2bea974cb317a8965077a40e68f4cad1.setIcon(div_icon_7dc1d120d5b9ed5c205f65e309cde49a);
+        
+    
+        var popup_ee1f71a823cd0b51caa29ab17e110c8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cbf933f67e2a1f43f7e0047e141f9492 = $(`<div id="html_cbf933f67e2a1f43f7e0047e141f9492" style="width: 100.0%; height: 100.0%;">Central Park</div>`)[0];
+            popup_ee1f71a823cd0b51caa29ab17e110c8d.setContent(html_cbf933f67e2a1f43f7e0047e141f9492);
+        
+
+        marker_2bea974cb317a8965077a40e68f4cad1.bindPopup(popup_ee1f71a823cd0b51caa29ab17e110c8d)
+        ;
+
+        
+    
+    
+            var marker_1be52d63136a2ab3db4de0b2ea44e0e6 = L.marker(
+                [40.6602, -73.969],
+                {}
+            ).addTo(map_8b3591b84028e1ccc6a8591475d5ae74);
+        
+    
+            var div_icon_9ba19c27409a3a8ca3679dc266382ba0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; color: black; font-weight: bold\"\u003eREALLLkjkjjjjjjjjjjjjjjjjjjjjj\u003c/div\u003e"});
+            marker_1be52d63136a2ab3db4de0b2ea44e0e6.setIcon(div_icon_9ba19c27409a3a8ca3679dc266382ba0);
+        
+    
+        var popup_8164192224e5e4fb42f597294c466979 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71cec80ee2ff74180f08bfa9d4ed5639 = $(`<div id="html_71cec80ee2ff74180f08bfa9d4ed5639" style="width: 100.0%; height: 100.0%;">REALLLkjkjjjjjjjjjjjjjjjjjjjjj</div>`)[0];
+            popup_8164192224e5e4fb42f597294c466979.setContent(html_71cec80ee2ff74180f08bfa9d4ed5639);
+        
+
+        marker_1be52d63136a2ab3db4de0b2ea44e0e6.bindPopup(popup_8164192224e5e4fb42f597294c466979)
+        ;
+
+        
+    
+    
+            var marker_7a3a8bcea701aa88e7ca6709d0478f42 = L.marker(
+                [40.6695, -73.9624],
+                {}
+            ).addTo(map_8b3591b84028e1ccc6a8591475d5ae74);
+        
+    
+            var div_icon_50494c1901040f5cd39512ddf2264aeb = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-family: Arial; color: black; font-weight: bold\"\u003eBrooklyn Botanic Garden\u003c/div\u003e"});
+            marker_7a3a8bcea701aa88e7ca6709d0478f42.setIcon(div_icon_50494c1901040f5cd39512ddf2264aeb);
+        
+    
+        var popup_a85ff71685f2321a9f56a45b51b61ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e2c99174515c8501ed6e8a2933c31fb = $(`<div id="html_5e2c99174515c8501ed6e8a2933c31fb" style="width: 100.0%; height: 100.0%;">Brooklyn Botanic Garden</div>`)[0];
+            popup_a85ff71685f2321a9f56a45b51b61ee5.setContent(html_5e2c99174515c8501ed6e8a2933c31fb);
+        
+
+        marker_7a3a8bcea701aa88e7ca6709d0478f42.bindPopup(popup_a85ff71685f2321a9f56a45b51b61ee5)
+        ;
+
+        
+    
+    
+            map_8b3591b84028e1ccc6a8591475d5ae74.fitBounds(
+                [],
+                {"padding": [2, 2]}
+            );
+        
+</script>
