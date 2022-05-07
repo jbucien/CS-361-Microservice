@@ -1,1 +1,126 @@
-/CS-361-Microservice/map.png
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6392834e54ff3a2ce16f530a1722b4a {
+                    position: relative;
+                    width: 400.0px;
+                    height: 300.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c6392834e54ff3a2ce16f530a1722b4a" ></div>
+        
+</body>
+<script>    
+    
+            var map_c6392834e54ff3a2ce16f530a1722b4a = L.map(
+                "map_c6392834e54ff3a2ce16f530a1722b4a",
+                {
+                    center: [37.773972, -122.431297],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_59448bec161c253a1e6af0b5545aff9e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
+        
+    
+            var marker_fc22dfec247257c6f962163ea22a108c = L.marker(
+                [37.79086, -122.45942],
+                {}
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
+        
+    
+        var popup_ac7e0202a678a63204852cb9b3acc057 = L.popup({"maxWidth": 280});
+
+        
+            var html_5b34e2006a798e4220b54746921bd11f = $(`<div id="html_5b34e2006a798e4220b54746921bd11f" style="width: 100.0%; height: 100.0%;">Presidio</div>`)[0];
+            popup_ac7e0202a678a63204852cb9b3acc057.setContent(html_5b34e2006a798e4220b54746921bd11f);
+        
+
+        marker_fc22dfec247257c6f962163ea22a108c.bindPopup(popup_ac7e0202a678a63204852cb9b3acc057)
+        ;
+
+        
+    
+    
+            var marker_c4c1419a8035a89db6b7c64c35543fb4 = L.marker(
+                [37.75756, -122.45615],
+                {}
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
+        
+    
+        var popup_e45aa8c696069655dcab6a05288e1240 = L.popup({"maxWidth": 640});
+
+        
+            var html_2d8cde238fc5a467b25844296f733f79 = $(`<div id="html_2d8cde238fc5a467b25844296f733f79" style="width: 100.0%; height: 100.0%;">Mount Sutro Historic Trail</div>`)[0];
+            popup_e45aa8c696069655dcab6a05288e1240.setContent(html_2d8cde238fc5a467b25844296f733f79);
+        
+
+        marker_c4c1419a8035a89db6b7c64c35543fb4.bindPopup(popup_e45aa8c696069655dcab6a05288e1240)
+        ;
+
+        
+    
+    
+            var marker_9f7d0a06e93ed42f29708ba0195e08dc = L.marker(
+                [37.50344, -122.29875],
+                {}
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
+        
+    
+        var popup_0d7779ed8bb4e61541e983be4679e011 = L.popup({"maxWidth": 500});
+
+        
+            var html_d128bb1cc71f8bb2d4beb2136f5daefb = $(`<div id="html_d128bb1cc71f8bb2d4beb2136f5daefb" style="width: 100.0%; height: 100.0%;">Water Dog Lake Park</div>`)[0];
+            popup_0d7779ed8bb4e61541e983be4679e011.setContent(html_d128bb1cc71f8bb2d4beb2136f5daefb);
+        
+
+        marker_9f7d0a06e93ed42f29708ba0195e08dc.bindPopup(popup_0d7779ed8bb4e61541e983be4679e011)
+        ;
+
+        
+    
+    
+            map_c6392834e54ff3a2ce16f530a1722b4a.fitBounds(
+                [[37.79086, -122.45942], [37.75756, -122.45615], [37.50344, -122.29875]],
+                {"padding": [50, 50]}
+            );
+        
+</script>

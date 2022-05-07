@@ -2,4 +2,4 @@
 
 [{"name": "Fairfax, Virginia", "lat": 38.84622, "lon": -77.30637},{"name": "Difficult Run", "lat": 38.87420, "lon": -77.31520}, {"name": "Section 7", "lat": 38.87594, "lon": -77.31144}, {"name": "495 Downhill", "lat": 38.84040, "lon": -77.22152}]
 
-
+[{"name": "New York, New York", "lat": 40.71278, "lon": -74.00594}, {"name": "East Side Green way 34th st to the Staten Island Ferry", "lat": 40.70267, "lon": -74.00828}, {"name": "West Street Greenway", "lat": 40.76673, "lon": -73.99663}, {"name": "Six Mile Run", "lat": 40.45635, "lon": -74.51400}, {"name": "Forest Park Trail Network", "lat": 40.70843, "lon": -73.83903}, {"name": "South beach Midland Beach Greenway", "lat": 40.59895, "lon": -74.05582}]

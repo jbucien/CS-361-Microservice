@@ -23,10 +23,10 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_b04f156aebc1abad99810db16bf562d9 {
+                #map_c6392834e54ff3a2ce16f530a1722b4a {
                     position: relative;
-                    width: 550.0px;
-                    height: 400.0px;
+                    width: 400.0px;
+                    height: 300.0px;
                     left: 0.0%;
                     top: 0.0%;
                 }
@@ -35,18 +35,18 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_b04f156aebc1abad99810db16bf562d9" ></div>
+            <div class="folium-map" id="map_c6392834e54ff3a2ce16f530a1722b4a" ></div>
         
 </body>
 <script>    
     
-            var map_b04f156aebc1abad99810db16bf562d9 = L.map(
-                "map_b04f156aebc1abad99810db16bf562d9",
+            var map_c6392834e54ff3a2ce16f530a1722b4a = L.map(
+                "map_c6392834e54ff3a2ce16f530a1722b4a",
                 {
-                    center: [38.84622, -77.30637],
+                    center: [37.773972, -122.431297],
                     crs: L.CRS.EPSG3857,
                     zoom: 10,
-                    zoomControl: false,
+                    zoomControl: true,
                     preferCanvas: false,
                 }
             );
@@ -55,71 +55,71 @@
 
         
     
-            var tile_layer_859bad73bf9048f12dc0ae6dd0b882ee = L.tileLayer(
+            var tile_layer_59448bec161c253a1e6af0b5545aff9e = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_b04f156aebc1abad99810db16bf562d9);
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
         
     
-            var marker_14ecb2a82176db12a2e4c37691d118a3 = L.marker(
-                [38.8742, -77.3152],
+            var marker_fc22dfec247257c6f962163ea22a108c = L.marker(
+                [37.79086, -122.45942],
                 {}
-            ).addTo(map_b04f156aebc1abad99810db16bf562d9);
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
         
     
-        var popup_ead884c485a9809a09128466e04f399f = L.popup({"autoClose": false, "maxWidth": 380});
+        var popup_ac7e0202a678a63204852cb9b3acc057 = L.popup({"maxWidth": 280});
 
         
-            var html_09629866b79ba171be8d1f63b4f4ddaf = $(`<div id="html_09629866b79ba171be8d1f63b4f4ddaf" style="width: 100.0%; height: 100.0%;">Difficult Run</div>`)[0];
-            popup_ead884c485a9809a09128466e04f399f.setContent(html_09629866b79ba171be8d1f63b4f4ddaf);
+            var html_5b34e2006a798e4220b54746921bd11f = $(`<div id="html_5b34e2006a798e4220b54746921bd11f" style="width: 100.0%; height: 100.0%;">Presidio</div>`)[0];
+            popup_ac7e0202a678a63204852cb9b3acc057.setContent(html_5b34e2006a798e4220b54746921bd11f);
         
 
-        marker_14ecb2a82176db12a2e4c37691d118a3.bindPopup(popup_ead884c485a9809a09128466e04f399f)
-        .openPopup();
+        marker_fc22dfec247257c6f962163ea22a108c.bindPopup(popup_ac7e0202a678a63204852cb9b3acc057)
+        ;
 
         
     
     
-            var marker_add4b42f0c07268a0edaa68ff3de6eae = L.marker(
-                [38.87594, -77.31144],
+            var marker_c4c1419a8035a89db6b7c64c35543fb4 = L.marker(
+                [37.75756, -122.45615],
                 {}
-            ).addTo(map_b04f156aebc1abad99810db16bf562d9);
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
         
     
-        var popup_a98fd88d2f9292c3fbb07a815ec5d04f = L.popup({"autoClose": false, "maxWidth": 300});
+        var popup_e45aa8c696069655dcab6a05288e1240 = L.popup({"maxWidth": 640});
 
         
-            var html_af1fa05340cb33bd090cb758fdf20234 = $(`<div id="html_af1fa05340cb33bd090cb758fdf20234" style="width: 100.0%; height: 100.0%;">Section 7</div>`)[0];
-            popup_a98fd88d2f9292c3fbb07a815ec5d04f.setContent(html_af1fa05340cb33bd090cb758fdf20234);
+            var html_2d8cde238fc5a467b25844296f733f79 = $(`<div id="html_2d8cde238fc5a467b25844296f733f79" style="width: 100.0%; height: 100.0%;">Mount Sutro Historic Trail</div>`)[0];
+            popup_e45aa8c696069655dcab6a05288e1240.setContent(html_2d8cde238fc5a467b25844296f733f79);
         
 
-        marker_add4b42f0c07268a0edaa68ff3de6eae.bindPopup(popup_a98fd88d2f9292c3fbb07a815ec5d04f)
-        .openPopup();
+        marker_c4c1419a8035a89db6b7c64c35543fb4.bindPopup(popup_e45aa8c696069655dcab6a05288e1240)
+        ;
 
         
     
     
-            var marker_84410905d5e3964d5f4100e2bd9e9963 = L.marker(
-                [38.8404, -77.22152],
+            var marker_9f7d0a06e93ed42f29708ba0195e08dc = L.marker(
+                [37.50344, -122.29875],
                 {}
-            ).addTo(map_b04f156aebc1abad99810db16bf562d9);
+            ).addTo(map_c6392834e54ff3a2ce16f530a1722b4a);
         
     
-        var popup_90598b423d6fc5e1f33f97a985fbd9eb = L.popup({"autoClose": false, "maxWidth": 360});
+        var popup_0d7779ed8bb4e61541e983be4679e011 = L.popup({"maxWidth": 500});
 
         
-            var html_e589fd41a31ba27aa9c56243ffc357c0 = $(`<div id="html_e589fd41a31ba27aa9c56243ffc357c0" style="width: 100.0%; height: 100.0%;">495 Downhill</div>`)[0];
-            popup_90598b423d6fc5e1f33f97a985fbd9eb.setContent(html_e589fd41a31ba27aa9c56243ffc357c0);
+            var html_d128bb1cc71f8bb2d4beb2136f5daefb = $(`<div id="html_d128bb1cc71f8bb2d4beb2136f5daefb" style="width: 100.0%; height: 100.0%;">Water Dog Lake Park</div>`)[0];
+            popup_0d7779ed8bb4e61541e983be4679e011.setContent(html_d128bb1cc71f8bb2d4beb2136f5daefb);
         
 
-        marker_84410905d5e3964d5f4100e2bd9e9963.bindPopup(popup_90598b423d6fc5e1f33f97a985fbd9eb)
-        .openPopup();
+        marker_9f7d0a06e93ed42f29708ba0195e08dc.bindPopup(popup_0d7779ed8bb4e61541e983be4679e011)
+        ;
 
         
     
     
-            map_b04f156aebc1abad99810db16bf562d9.fitBounds(
-                [[38.8742, -77.3152], [38.87594, -77.31144], [38.8404, -77.22152]],
+            map_c6392834e54ff3a2ce16f530a1722b4a.fitBounds(
+                [[37.79086, -122.45942], [37.75756, -122.45615], [37.50344, -122.29875]],
                 {"padding": [50, 50]}
             );
         

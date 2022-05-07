@@ -1,33 +1,29 @@
-from html2image import Html2Image
 import folium
-from time import sleep
+from time import sleep, time
 import ast
+import requests
 
 
 def read_location():
-    """Reads String of name/coordinate information from location.txt, then erases the file. Returns the string in the form of a list of dictionaries."""
-    while True:
-        sleep(1)
-        with open('location.txt', 'r+') as file:
+    """Reads String of name/coordinate information from location.txt, then erases the string from the file. Returns the string in the form of a list of dictionaries."""
+    sleep(2)
+    with open('location.txt', 'r+') as file:
+        data = file.read(1)
+        if data:
+            file.seek(0)
             data = file.read()
-            if data:
-                file.truncate(0)
-                data = ast.literal_eval(data)
-        return data
+            file.truncate(0)
+    if data:
+        data = ast.literal_eval(data)
+    return data
 
 
 def get_map(parsed_data):
-    """Takes list of dictionaries and creates Folium map. Creates markers and labels of trail points and exports map as html and png."""
-    if not parsed_data:
-        return
-    hti = Html2Image(
-        custom_flags=['--virtual-time-budget=10000'], size=(550, 400))
+    """Takes list of dictionaries and creates Folium map. Creates markers and labels of trail points and exports map as static html page"""
     map = folium.Map(
         location=[parsed_data[0]["lat"], parsed_data[0]["lon"]],
-        width=550,
-        height=400,
-        zoom_start=10,
-        zoom_control=False
+        width=400,
+        height=300
     )
 
     parsed_data = parsed_data[1:]
@@ -38,24 +34,31 @@ def get_map(parsed_data):
         folium.Marker(
             location=[loc["lat"], loc["lon"]],
             popup=folium.Popup(f"{name}", max_width=len(
-                f"name= {name}")*20, show=True)
+                f"name= {name}")*20)
         ).add_to(map)
         bounds.append([loc["lat"], loc["lon"]])
 
     map.fit_bounds(bounds, padding=(50, 50))
     map.save("map.html")
-    hti.screenshot(html_file="map.html", save_as="map.png")
 
 
-def write_img_path(path=""):
-    with open('map.txt', 'w') as imgpath:
-        imgpath.write(f"{path}/CS-361-Microservice/map.png")
+def write_html():
+    """
+    Writes Folium map html file into a text file that Chris's app can read.
+    """
+    with open('map.html', 'r') as html_file:
+        text = html_file.read()
+        with open('map.txt', 'w') as file:
+            file.write(text)
 
 
 def main_driver():
-    parsed = read_location()
-    get_map(parsed)
-    write_img_path()
+    end_time = time() + (60*5)
+    while time() < end_time:
+        parsed = read_location()
+        if parsed:
+            get_map(parsed)
+            write_html()
 
 
 if __name__ == "__main__":
